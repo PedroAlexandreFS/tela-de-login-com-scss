@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto:ital,wght@1,100&display=swap');
+
+@mixin cardlogin{
+    text-align:center;
+    margin: 50px 80px 30px 70px;
+    padding:5px 70px 5px 13px;
+    border-radius:5px;
+    border:1px solid $secondary;
+    &:hover{
+        border: 1px solid $sun; 
+    }
+}
+
+$pearl:white;
+$primary:black;
+$secondary:#F12771;
+$sun:#FE8953;
+$tree:#1C0120;
+
+body{
+   background-image: url(../img/linhas-brilhantes-na-forma-3d-do-coracao-humano-em-fundo-escuro-generativo-ai.jpg);
+   backdrop-filter:blur(10px);
+}
+.login{
+    height:500px;
+    width:400px;
+    margin:125px 125px 5px 500px;
+    background:$pearl;
+    border-radius: 12px;
+    box-shadow: 8px 8px 15px $primary;
+}
+    header{
+        border-radius: 10px;
+        background-image: url(../img/Background.png);
+        color: $pearl;
+        text-align: center;
+        height:250px;
+        margin:0px 0px 0px 0px;
+        width:auto;
+        h2{
+        font-family: 'Roboto', sans-serif;
+        padding:40px 20px 5px 20px;
+        }
+        .register{
+            font-family:'Roboto', sans-serif;
+            font-size:16px;
+            background: $pearl;
+            padding:5px 10px 5px 10px;
+            border-radius: 15px;
+            color:$secondary;
+            text-decoration:none;
+            &:hover{
+            font-size:17px;
+            color:$secondary;
+            border: 2px solid $pearl;
+            }
+        }
+        h1{
+            letter-spacing: 4px;
+            font-family: 'Noto Sans TC', sans-serif;
+            padding-top:50px;
+        }
+    }
+
+    main{
+        display:flex;
+        height:250px;
+
+        .email,.password{
+            @include cardlogin()
+            }
+
+        #pass{
+            margin-top: 12px;
+        }
+
+        button{
+            color: $secondary;
+            background: $pearl;
+            font-family:'Courier New', Courier, monospace;
+            border:1px solid $pearl;
+            padding:5px 10px 5px 10px;
+            margin-top:20px;
+            margin-right:175px;
+            &:hover{
+                font-size:14px;
+            }
+        }
+
+      label img{
+        position: absolute;
+        margin-top:50px;
+        margin-left: 35px;
+      }
+      .cadeado{
+             margin-top:15px;
+      }
+
+
+        .forget{
+            text-decoration: none;
+            color:$secondary;
+            &:hover{
+                font-size:14px;
+            }
+        }
+    }
+
+
+@media only screen and (max-width: 600px) {
+    .login{
+      margin:50px;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .login{
+        margin:90px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .login{
+        margin-left: 250px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .login{margin-left:330px;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+    .login{
+     margin:125px 125px 10px 500px;
+    }
+}
