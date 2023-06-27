@@ -94,7 +94,13 @@ main .forget:hover {
 
 @media only screen and (max-width: 600px) {
   .login {
-    margin: 50px;
+    margin:10px 50px 10px 50px;
+  }
+  .forget{
+    font-size: 14px;
+  }
+  .foget:hover{
+    font-size: 12px;
   }
 }
 @media only screen and (min-width: 600px) {
