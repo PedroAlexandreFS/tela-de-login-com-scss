@@ -23,7 +23,14 @@ body{
    background-size:100;
 
 }
+.center{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
 .login{
+    justify-content: end;
     display: flex;
     flex-direction: column;
     text-align: center;
