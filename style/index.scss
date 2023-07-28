@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto:ital,wght@1,100&display=swap');
 
 @mixin cardlogin{
@@ -13,18 +12,23 @@
 }
 
 $pearl:white;
+$primary:black;
 $secondary:#F12771;
 $sun:#FE8953;
 $tree:#1C0120;
 
 body{
-   background-image: url(../img/linhas-brilhantes-na-forma-3d-do-coracao-humano-em-fundo-escuro-generativo-ai.jpg);
+   background: url(../img/linhas-brilhantes-na-forma-3d-do-coracao-humano-em-fundo-escuro-generativo-ai.jpg) no-repeat center;
    backdrop-filter:blur(10px);
+   background-size:100;
+
 }
 .login{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     height:500px;
     width:400px;
-    margin:125px 125px 5px 500px;
     background:$pearl;
     border-radius: 12px;
     box-shadow: 8px 8px 15px $primary;
@@ -33,11 +37,11 @@ body{
         border-radius: 10px;
         background-image: url(../img/Background.png);
         color: $pearl;
-        text-align: center;
         height:250px;
         margin:0px 0px 0px 0px;
         width:auto;
         h2{
+        margin-bottom:20px;
         font-family: 'Roboto', sans-serif;
         padding:40px 20px 5px 20px;
         }
@@ -101,7 +105,7 @@ body{
             text-decoration: none;
             color:$secondary;
             &:hover{
-                font-size:16px;
+                font-size:14px;
             }
         }
     }
@@ -111,33 +115,11 @@ body{
     .login{
       margin:50px;
     }
-}
-
-
-@media only screen and (min-width: 600px) {
-    .login{
-        margin:90px;
+    .foget{
+        font-size:14px;
     }
-    .forget{
-        font-size: 14px;
-    }
+
+
 }
 
 
-@media only screen and (min-width: 768px) {
-    .login{
-        margin-left: 250px;
-    }
-}
-
-
-@media only screen and (min-width: 992px) {
-    .login{margin-left:330px;
-}
-}
-
-@media only screen and (min-width: 1200px) {
-    .login{
-     margin:125px 125px 10px 500px;
-    }
-}
