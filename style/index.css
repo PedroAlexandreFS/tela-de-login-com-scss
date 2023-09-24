@@ -1,119 +1,110 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto:ital,wght@1,100&display=swap");
 body {
-  background-image: url(../img/linhas-brilhantes-na-forma-3d-do-coracao-humano-em-fundo-escuro-generativo-ai.jpg);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-image: url(/img/linhas-brilhantes-na-forma-3d-do-coracao-humano-em-fundo-escuro-generativo-ai.jpg);
 }
 
 .login {
-  height: 500px;
-  width: 400px;
-  margin: 125px 125px 5px 500px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 8px 8px 15px black;
-}
-
-header {
-  border-radius: 10px;
-  background-image: url(../img/Background.png);
-  color: white;
-  text-align: center;
-  height: 250px;
-  margin: 0px 0px 0px 0px;
-  width: auto;
-}
-header h2 {
-  font-family: "Roboto", sans-serif;
-  padding: 40px 20px 5px 20px;
-}
-header .register {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  background: white;
-  padding: 5px 10px 5px 10px;
-  border-radius: 15px;
-  color: #F12771;
-  text-decoration: none;
-}
-header .register:hover {
-  font-size: 17px;
-  color: #F12771;
-  border: 2px solid white;
-}
-header h1 {
-  letter-spacing: 4px;
-  font-family: "Noto Sans TC", sans-serif;
-  padding-top: 50px;
-}
-
-main {
-  display: flex;
-  height: 250px;
-}
-main .email, main .password {
-  text-align: center;
-  margin: 50px 80px 30px 70px;
-  padding: 5px 70px 5px 13px;
-  border-radius: 5px;
-  border: 1px solid #F12771;
-}
-main .email:hover, main .password:hover {
-  border: 1px solid #FE8953;
-}
-main #pass {
-  margin-top: 12px;
-}
-main button {
-  color: #F12771;
-  background: white;
-  font-family: "Courier New", Courier, monospace;
-  border: 1px solid white;
-  padding: 5px 10px 5px 10px;
-  margin-top: 20px;
-  margin-right: 175px;
-}
-main button:hover {
-  font-size: 14px;
-}
-main label img {
   position: absolute;
-  margin-top: 50px;
-  margin-left: 35px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-main .cadeado {
-  margin-top: 15px;
+.login header {
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+  width: 350px;
+  height: 234px;
+  background-image: url(/img/Background.png);
+  color: #fff;
 }
-main .forget {
+.login header h2 {
+  margin-top: 25px;
+  margin-bottom: 6px;
+  padding: 1.2rem;
+}
+.login header .register {
+  background-color: #fff;
+  padding: 8px;
   text-decoration: none;
-  color: #F12771;
+  border-radius: 10px;
+  color: #e4326b;
 }
-main .forget:hover {
-  font-size: 14px;
+.login header .register:hover {
+  padding: 6px;
+  font-size: 15px;
+  color: #fc985a;
 }
-
-@media only screen and (max-width: 600px) {
-  .login {
-    margin: 50px;
-  }
+.login header h1 {
+  padding: 50px;
 }
-@media only screen and (min-width: 600px) {
-  .login {
-    margin: 90px;
-  }
+.login main {
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  height: 239px;
+  background: #fff;
 }
-@media only screen and (min-width: 768px) {
-  .login {
-    margin-left: 250px;
-  }
+.login main .fi-rr-user {
+  color: #e4326b;
+  padding: 10px;
+  position: absolute;
+  top: 62%;
+  left: 15%;
+  transform: translate(-62%, -15%);
 }
-@media only screen and (min-width: 992px) {
-  .login {
-    margin-left: 330px;
-  }
+.login main .email {
+  border-radius: 4px;
+  border: 1px solid #e4326b;
+  position: absolute;
+  top: 63%;
+  left: 20%;
+  padding: 5px 20px;
+  text-align: center;
 }
-@media only screen and (min-width: 1200px) {
-  .login {
-    margin: 125px 125px 10px 500px;
-  }
+.login main .email:hover {
+  border: 1px solid #fc985a;
+}
+.login main .fi-rr-lock {
+  position: absolute;
+  top: 76%;
+  left: 16%;
+  transform: translate(-76%, -15%);
+  padding: 10px;
+  color: #e4326b;
+}
+.login main .password {
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid #e4326b;
+  position: absolute;
+  top: 76%;
+  left: 20%;
+  padding: 5px 20px;
+}
+.login main .password:hover {
+  border: 1px solid #fc985a;
+}
+.login main button {
+  color: #e4326b;
+  background: #fff;
+  border: none;
+  position: absolute;
+  left: 6%;
+  top: 92%;
+  padding: 4px 15px;
+}
+.login main button:hover {
+  font-size: 12px;
+  color: #fc985a;
+}
+.login .forget {
+  color: #e4326b;
+  text-decoration: none;
+  position: absolute;
+  right: 6%;
+  top: 92%;
+}
+.login .forget:hover {
+  font-size: 15px;
+  color: #fc985a;
 }/*# sourceMappingURL=index.css.map */
