@@ -10,6 +10,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 8px 8px 15px black;
+  border-radius: 10px;
 }
 .login header {
   border-top-right-radius: 18px;
