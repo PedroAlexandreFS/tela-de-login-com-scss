@@ -9,7 +9,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 8px 8px 15px black;
   border-radius: 10px;
 }
 .login header {
@@ -21,9 +20,7 @@ body {
   color: #fff;
 }
 .login header h2 {
-  margin-top: 25px;
-  margin-bottom: 6px;
-  padding: 1.2rem;
+  padding: 1.9rem;
 }
 .login header .register {
   background-color: #fff;
@@ -50,7 +47,7 @@ body {
   color: #e4326b;
   padding: 10px;
   position: absolute;
-  top: 62%;
+  top: 60%;
   left: 15%;
   transform: translate(-62%, -15%);
 }
@@ -58,7 +55,7 @@ body {
   border-radius: 4px;
   border: 1px solid #e4326b;
   position: absolute;
-  top: 63%;
+  top: 60%;
   left: 20%;
   padding: 5px 20px;
   text-align: center;
@@ -68,7 +65,7 @@ body {
 }
 .login main .fi-rr-lock {
   position: absolute;
-  top: 76%;
+  top: 74%;
   left: 16%;
   transform: translate(-76%, -15%);
   padding: 10px;
@@ -79,7 +76,7 @@ body {
   text-align: center;
   border: 1px solid #e4326b;
   position: absolute;
-  top: 76%;
+  top: 74%;
   left: 20%;
   padding: 5px 20px;
 }
