@@ -1,0 +1,15 @@
+@mixin flex-centralizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin input-style {
+    font-family: $font-stack;
+    border: none;
+    font-size: 20px;
+    height: 60px;
+    background: $cinza;
+    width: 77%;
+    text-align: left;
+}

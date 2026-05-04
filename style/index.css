@@ -30,14 +30,42 @@
   flex: 100%;
 }
 .formularios .inputs {
-  flex: 75%;
+  flex: 76%;
 }
-.formularios .inputs input {
+.formularios .inputs #email, .formularios .inputs #senha {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-left: 12%;
   margin-right: 12%;
+  margin-top: 6%;
+  border: none;
+  font-size: 20px;
   height: 60px;
-  padding: 20px 10px 20px 10px;
-  background: rgb(234, 234, 234);
+  padding: 20px 10px 20px 45px;
+  background: rgb(236, 236, 236);
+  width: 77%;
+  text-align: left;
+}
+.formularios .inputs #email {
+  background: url(/img/envelope.png) no-repeat left center;
+  background-color: rgb(236, 236, 236);
+  background-position: 12px center;
+}
+.formularios .inputs #senha {
+  background: url(/img/lock.png) no-repeat left center;
+  background-color: rgb(236, 236, 236);
+  background-position: 12px center;
+}
+.formularios .inputs #lembra {
+  height: 15px;
+  margin-top: 5%;
+  margin-left: 12%;
+}
+.formularios .inputs label {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin-top: 5%;
+  margin-left: 2%;
+  color: gray;
 }
 .formularios .botao {
   flex: 100%;
@@ -46,6 +74,7 @@
 }
 .formularios .botao a {
   display: block;
+  margin-top: 4%;
   margin-left: 12%;
   margin-right: 12%;
   padding: 20px 10px 20px 10px;
@@ -53,4 +82,11 @@
   background: rgb(239, 55, 162);
   text-align: center;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+.formularios .botao a:hover {
+  background: rgb(252, 113, 194);
+  color: rgb(236, 236, 236);
+  margin-left: 11%;
+  margin-right: 11%;
 }/*# sourceMappingURL=index.css.map */

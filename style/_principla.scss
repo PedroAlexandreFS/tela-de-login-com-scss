@@ -1,0 +1,76 @@
+@use 'variables';
+@use 'mixins';
+@use 'functions';
+@use 'buttons';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.principais {
+  background: linear-gradient(to top, variables.$blue, variables.$red);
+  @include mixins.flex-centralizado;
+  height: 100vh;
+}
+
+.formularios {
+  background: variables.$white;
+  height: 90vh;
+  max-width: 450px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+
+  h2 {
+    font-family: variables.$font-stack;
+    text-align: center;
+    font-weight: bold;
+    margin-top: functions.px-to-rem(80);
+    font-size: functions.px-to-rem(35);
+    letter-spacing: 2px;
+    flex: 100%;
+  }
+
+  .inputs {
+    flex: 76%;
+
+    #email, #senha {
+      @include mixins.input-style;
+      margin: 6% 12% 0;
+      padding-left: 45px; // espaço para ícone
+    }
+
+    #email {
+      background: url(/img/envelope.png) no-repeat 12px center variables.$cinza;
+      background-size: 20px;
+    }
+
+    #senha {
+      background: url(/img/lock.png) no-repeat 12px center variables.$cinza;
+      background-size: 20px;
+    }
+
+    #lembra {
+      height: 15px;
+      margin: 5% 0 0 12%;
+    }
+
+    label {
+      font-family: variables.$font-stack;
+      font-size: functions.px-to-rem(20);
+      margin: 5% 0 0 2%;
+      color: gray;
+    }
+  }
+
+  .botao {
+    flex: 100%;
+    @include mixins.flex-center;
+
+    a {
+      @extend .button;
+    }
+  }
+}
