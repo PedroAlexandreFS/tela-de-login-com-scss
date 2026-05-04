@@ -37,5 +37,5 @@ Tela de login simples e estilizada com SCSS.
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seuusuario/fake-login.git
+   git clonehttps://github.com/PedroAlexandreFS/tela-de-login-com-scss
 
